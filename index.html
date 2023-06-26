@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>破竹之势</title>
+	<link rel="stylesheet" href="css/new_file1.css">
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="box-top">
+            <div class="box-top-b">
+                <div class="box-top-bt">
+                    <img src="./img/000-00.jpg" alt="">
+                    <p><a href="#">破竹</a>之势</p>
+                </div>
+                <p>Breaking the trend of bamboo</p>
+            </div>
+            <ul class="bigul">
+                <li class="choose" id="bigli"><a href="first_page.html"  style="text-decoration: none;color: #fff;" >网站首页</a>
+					<ul class="shouyeul">
+						<li class="shouyeli">简介</li>
+						<li class="shouyeli">风景名迹展示</li>
+						<li class="shouyeli">活动咨询</li>
+						<li class="shouyeli">非遗传承</li>
+					</ul>
+				</li>
+                <li class="choose"><a href="ours_page.html"  style="text-decoration: none;color: #fff;" >关于我们</a></li>
+                <!-- <li class="choose"><a href="inherit_page.html"  style="text-decoration: none;color: #fff;" >竹编非遗传承人介绍</a></li> -->
+                <li class="choose"><a href="./chanping.html" style="text-decoration: none;color: #fff;">竹编产品</a></li>
+                <li class="choose"><a href="community_page.html"  style="text-decoration: none;color: #fff;" >竹编创意社区</a></li>
+                <li class="choose"><a href="tiyan_page.html"  style="text-decoration: none;color: #fff;" >云上竹编体验</a></li>
+                <li class="choose"><a href="jidi_page.html"  style="text-decoration: none;color: #fff;" >竹编生长基地</a></li>
+                <li class="choose"><a href="lianxi_our_page.html"  style="text-decoration: none;color: #fff;" >联系我们</a></li>
+            </ul>
+            <span>中文/Engli</span>
+        </div>
+    </div>
+		<div class="son">
+			<img src="./img/shouye1.jpg" alt=""  id="animated-image">
+		</div>
+	<script src="./img/new_file.js"></script>
+	  <script>
+	    var imageIndex = 1; // 当前图片索引
+	    // 定时器，每隔3秒更换一次图片
+	    setInterval(changeImage, 3500);
+	    function changeImage() {
+	      var image = document.getElementById('animated-image');
+	      
+	      // 更换图片的逻辑
+	      if (imageIndex === 1) {
+	        image.src = './img/shouye1.jpg';
+	        imageIndex = 2;
+	      } else if(imageIndex === 2){
+	        image.src = './img/shouye3.jpg';
+	        imageIndex = 3;
+	      }
+		  else if(imageIndex === 3){
+		    image.src = './img/shouye4.jpg';
+		    imageIndex = 1;
+		  }
+	    }
+	  </script>
+</body>
+
+</html>

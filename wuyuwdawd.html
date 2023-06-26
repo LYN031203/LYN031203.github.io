@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .parent-list {
+      list-style-type: none;
+    }
+
+    .child-list {
+      display: none;
+      list-style-type: none;
+    }
+
+    .parent-list:hover .child-list {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <ul class="parent-list">
+    <li>主要条目1
+      <ul class="child-list">
+        <li>次要条目1</li>
+        <li>次要条目2</li>
+        <li>次要条目3</li>
+      </ul>
+    </li>
+    <li>主要条目2
+      <ul class="child-list">
+        <li>次要条目4</li>
+        <li>次要条目5</li>
+        <li>次要条目6</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>

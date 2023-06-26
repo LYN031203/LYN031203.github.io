@@ -1,0 +1,60 @@
+* {
+        	margin: 0;
+        	padding: 0;
+        	box-sizing: border-box;
+        	list-style-type: none;
+        }
+#image-container img{
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	height: 600px;
+	width: 100%;
+}
+.top{
+	width: 100%;
+	height: 80px;
+	background-color: #ffffff;
+}
+.log{
+	height: 80px;
+	width: 10%;
+	background-image: url('../img/colorLogo(1).png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: left;
+	margin-right:12%;
+}
+.choose{
+	height: 80px;
+	width: 15%;
+	line-height: 80px;
+	text-align: center;
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+	color: #a5f479;
+}
+.choose:hover{
+	background-color: #43bd5c;
+	cursor: pointer;
+	color: #aaff7f;
+	font-size: 17px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1; /* 初始透明度为完全显示 */
+  }
+  50% {
+    opacity: 0.2; /* 透明度为0，即消失状态 */
+  }
+  100% {
+    opacity: 1; /* 透明度再次变为完全显示 */
+  }
+}
+#image-container .animated-image {
+  animation-name: fade; /* 动画名称，与 @keyframes 定义的名称一致 */
+  animation-duration: 4s; /* 动画持续时间 */
+  animation-iteration-count: infinite; /* 动画循环次数，使用 infinite 无限循环 */
+}
+
